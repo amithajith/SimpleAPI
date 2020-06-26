@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SimpleAPI",
+		"_postman_id": "9bb32b6b-0b47-28fe-d868-d7befb2af842",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://apitestautomatiom.azurewebsites.net/api/values",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Body matches string\"] = responseBody.has(\"value1\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://apitestautomatiom.azurewebsites.net/api/values",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
